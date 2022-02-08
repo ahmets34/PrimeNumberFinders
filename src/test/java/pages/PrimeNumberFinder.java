@@ -11,7 +11,8 @@ public class PrimeNumberFinder {
         String checking2="1";
 
         System.out.println("Welcome to the Prime Number Finder!\n"
-                          +"This finder list all the prime numbers between that you gave the range"  );
+                          +"This finder list all the prime numbers between that you gave the range\n"
+                          +"Please enter a positive value for starting point :" );
 
         while (checking1.equals("1")){
 
@@ -23,7 +24,7 @@ public class PrimeNumberFinder {
                     System.out.println("Starting point must be positive");
                 }else{
                     while (checking2.equals("1")){
-                        System.out.println("Please enter a positive value for ending point");
+                        System.out.println("Please enter a positive value for ending point :");
 
                         try{
                             lastNumber=Integer.parseInt((scan.nextLine()));

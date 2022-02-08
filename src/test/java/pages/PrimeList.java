@@ -7,11 +7,21 @@ public class PrimeList implements PrimeNumberInterface{
 
     @Override
     public List<Integer> generate(int startingValue, int endingValue) {
+        int min ,max ;
+
+
+        if(startingValue<endingValue){
+            min=startingValue;
+            max=endingValue;
+        }else {
+            min=endingValue;
+            max=startingValue;
+        }
 
         List<Integer> list = new ArrayList<>();
 
 
-        for (int i = startingValue; i <= endingValue; i++){
+        for (int i = min; i <= max; i++){
 
 
             if (isPrime(i)){
